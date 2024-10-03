@@ -1,0 +1,17 @@
+#ifndef SOCKETUTIL_SOCKETUTIL_H
+#define SOCKETUTIL_SOCKETUTIL_H
+
+#include <stdio.h>
+#include <sys/socket.h>
+#include <netinet/in.h>
+#include <arpa/inet.h>
+#include <string.h>
+#include<stdlib.h>
+
+
+//seta o endereço e o protocolo
+struct sockaddr_in* createIPv4Address(char *ip,int port);
+//cria o socket
+int createIPv4Socket();
+
+#endif //SOCKETUTIL_SOCKETUTIL_H
